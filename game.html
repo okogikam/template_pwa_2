@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Anime Girl Wallpaper</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a121d47811.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./game.js" type="module"></script>
+    <!-- <script src="./memory.js" type="module"></script> -->
+    <style></style>
+  </head>
+  <body class="hold-transition content">
+    <!-- Automatic element centering -->
+    <div class="btn-back">
+      <a href="index.html">
+        <button class="btn btn-default">
+          <i class="fa-solid fa-arrow-left-long"></i>
+        </button>
+      </a>
+    </div>
+    <div class="btn-control">
+      <button class="btn btn-default btn-mark">
+        <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+      <button class="btn btn-default btn-reset">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+      <button class="btn btn-default btn-play d-none">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button class="btn btn-default btn-stop">
+        <i class="fa-solid fa-pause"></i>
+      </button>
+      <button class="btn btn-default">
+        <i class="fa-solid fa-circle-info"></i>
+      </button>
+    </div>
+    <div class="content-wrapper">
+      <div class="page row">
+        <div class="col-sm-8 col-md-6 p-3">
+          <div class="detail">
+            <div class="row">
+              <div class="col-6 waktu">
+                Times: <span data-time class="">00:00:00</span>
+              </div>
+              <div class="col-6 bom">
+                <span class="bom-left"
+                  >Bom: <span data-mine-count></span>/ <span data-mine></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 m-0 p-0 board">
+          <div class="stage m-0 p-0"></div>
+          <div class="start-game">
+            <button class="btn-start-game">
+              <i class="fa-regular fa-circle-play"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="score d-none">
+        <!-- Control sidebar content goes here -->
+        <div class="card info-score">
+          <div>
+            <p><span class="subtext"></span></p>
+            <p>Rank: 1</p>
+          </div>
+          <div>
+            <p><input type="text" placeholder="name" name="name" /></p>
+            <p>Your Times:</p>
+            <p><span class="score-time"></span></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-simpan">OK</button>
+        </div>
+      </div>
+      <div class="tmt-score d-none">
+        <!-- Control sidebar content goes here -->
+        <div class="card info-score">
+          <div class="row">
+            <div class="col-6">
+              <p>Times:</p>
+              <p><span class="tmt-time">00:00:00</span></p>
+            </div>
+            <div class="col-6">
+              <p>Bom:</p>
+              <p><span class="tmt-bom"></span></p>
+            </div>
+          </div>
+          <div class="tmt-btn">
+            <button type="submit" class="btn btn-primary btn-resume">
+              Resume
+            </button>
+            <a href="./index.html">
+              <button type="submit" class="btn btn-danger btn-close">
+                Close
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // let btnStop = document.querySelector(".stop");
+      // let scoreInfo = document.querySelector(".score");
+
+      // btnStop.addEventListener("click", function () {
+      //   scoreInfo.classList.toggle("d-none");
+      // });
+    </script>
+  </body>
+</html>

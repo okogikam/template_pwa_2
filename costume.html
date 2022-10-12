@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Anime Girl Wallpaper</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a121d47811.js"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+  </head>
+  <body class="hold-transition content">
+    <!-- Automatic element centering -->
+    <div class="content-wrapper">
+      <div class="page row">
+        <div class="col-lg-4">
+          <div class="card card-info card-outline">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card-img">
+                    <img class="eazy" src="./dist/img/photo1.png" alt="" />
+                    <a
+                      class="btn btn-info btn-start"
+                      href="./game.html?lvl=eazy"
+                      >Play</a
+                    >
+                  </div>
+                </div>
+                <div class="col-6 stage-info">
+                  <div class="text-center">
+                    <h4 class="font-weight-light">5 x 5</h4>
+                    <p class="font-weight-light">Eazy</p>
+                    <p class="font-weight-light">Best Score: 00:01:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-warning card-outline">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card-img">
+                    <img class="medium" src="./dist/img/photo2.png" alt="" />
+                    <a
+                      class="btn btn-warning btn-start"
+                      href="./game.html?lvl=medium"
+                      >Play</a
+                    >
+                  </div>
+                </div>
+                <div class="col-6 stage-info">
+                  <div class="text-center">
+                    <h4 class="font-weight-light">10 x 10</h4>
+                    <p class="font-weight-light">Medium</p>
+                    <p class="font-weight-light">Best Score: 00:01:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-danger card-outline">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card-img">
+                    <img class="hard" src="./dist/img/photo3.jpg" alt="" />
+                    <a
+                      class="btn btn-danger btn-start"
+                      href="./game.html?lvl=hard"
+                      >Play</a
+                    >
+                  </div>
+                </div>
+                <div class="col-6 stage-info">
+                  <div class="text-center">
+                    <h4 class="font-weight-light">25 x 25</h4>
+                    <p class="font-weight-light">Hard</p>
+                    <p class="font-weight-light">Best Score: 00:01:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+      <div class="btn-tambah">
+        <button onclick="formShow()" class="btn btn-primary">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="menu-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="costume.html" class="menu-link">
+          <i class="fa-solid fa-chess-board"></i>
+          <span>Costume</span>
+        </a>
+        <a href="score.html" class="menu-link">
+          <i class="fa-solid fa-trophy text-warning"></i>
+          <span>Score</span>
+        </a>
+      </div>
+      <!-- Control Sidebar -->
+      <div class="form-tambah d-none">
+        <form action="#" method="POST" class="card col-10 font-weight-light">
+          <div class="card-header">
+            <h4 class="font-weight-light">Add Costume Stage</h4>
+          </div>
+          <div class="card-body">
+            <p>Name : <input type="text" class="form-control" /></p>
+            <p>
+              Stage :
+              <input class="num-input" type="number" min="1" max="50" /> x
+              <input type="number" class="num-input" min="1" max="50" />
+            </p>
+            <p>
+              Boms :
+              <input class="num-input" type="number" class="form-control" />
+            </p>
+          </div>
+          <div class="card-footer text-right">
+            <input type="submit" value="Tambah" class="btn btn-primary" />
+            <button type="button" onclick="formShow()" class="btn btn-danger">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- /.center -->
+    <aside>
+      <div class="install-pwa">
+        <button class="btn btn-install">install</button>
+      </div>
+    </aside>
+
+    <script>
+      var loadImg = document.querySelector(".loading-page");
+      var formTambah = document.querySelector(".form-tambah");
+
+      window.onload = function () {
+        loadImg.classList.add("load-out");
+        console.log("5 detik");
+      };
+
+      function formShow() {
+        formTambah.classList.toggle("d-none");
+      }
+    </script>
+  </body>
+</html>

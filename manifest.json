@@ -1,0 +1,25 @@
+{
+  "short_name": "tmp",
+  "name": "template_pwa",
+  "icons": [
+    {
+      "src": "dist/img/AdminLTELogo.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "dist/img/boxed-bg.png",
+      "type": "image/png",
+      "sizes": "400x400",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/template_pwa/index.html",
+  "background_color": "#007bff",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "/template_pwa/",
+  "theme_color": "#fff",
+  "crossorigin": "use-credetials"
+}
